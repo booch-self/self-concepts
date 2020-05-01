@@ -1,2 +1,2 @@
 # self-concept
-fundamental abstractions for the Self hybrid connectionist/symbolic architecture for AGI
+Fundamental abstractions for a hybrid neuro/symbolic architecture for AGI

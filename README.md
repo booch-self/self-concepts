@@ -1,2 +1,2 @@
-# self-concept
-Fundamental abstractions for a hybrid neuro/symbolic architecture for AGI
+# self-concepts
+Self's foundational abstractions and microservices.

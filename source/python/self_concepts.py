@@ -1,7 +1,7 @@
 '''
 self_concepts
 
-This module declares Self's foundational classes:
+This module declares Self's foundational abstractions:
 
     Concept
     Property

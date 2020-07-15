@@ -1,0 +1,427 @@
+Concept
+    attributes
+        Correctly set and retrived name
+        Correctly denied direct access to properties
+        Correctly denied direct assignment to properties
+    addProperty
+        Correctly added property
+        Correctly denied adding property that already exists
+        Correctly denied adding ill-formed property
+    removeProperty
+        Correctly removed property
+        Correctly denied removing property that does not exist
+        Correctly denied removing ill-formed property
+    removeAllProperties
+        Correctly removed all properties
+    propertyExists
+        Correctly checked that property exists
+        Correctly checked that property does not exist
+        Correctly denied checking existence of ill-formed property
+    numberOfProperties
+        Correctly reported number of properties
+    iterateOverProperties
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over properties
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over properties with given name
+        Correctly iterated over properties with given property class
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over properties with given name and property class
+        Correctly denied iterating over ill-formed property class
+        Correctly denied iterating over ill-formed property class
+Property
+    attributes
+        Correctly set and retrived name
+        Correctly set and retrieved value
+Relationship
+    constructor
+        Correctly constructed relationship
+        Correctly constructed relationship
+        Correctly denied constructing relationship with ill-formed edge
+        Correctly denied constructing relationship with ill-formed edge
+    attributes
+        Correctly set and retrived name
+        Correctly set and retrieved edge
+        Correctly denied assigning ill-formed edge
+        Correctly denied assigning ill-formed edge
+        Correctly denied direct access to edge properties
+        Correctly denied direct assignment to edge properties
+        Correctly denied direct access to edge properties
+        Correctly denied direct assignment to edge properties
+    addEdgeProperty
+        Correctly added edge property
+        Correctly denied adding edge property that already exists
+        Correctly denied adding ill-formed edge property
+        Correctly added edge property
+        Correctly denied adding edge property that already exists
+        Correctly denied adding ill-formed edge property
+    removeEdgeProperty
+        Correctly removed edge property
+        Correctly denied removing edge property that does not exist
+        Correctly denied removing ill-formed edge property
+        Correctly removed edge property
+        Correctly denied removing edge property that does not exist
+        Correctly denied removing ill-formed edge property
+    removeAllEdgeProperties
+        Correctly removed all edge properties
+        Correctly removed all edge properties
+    edgePropertyExists
+        Correctly checked that edge property exists
+        Correctly checked that edge property does not exist
+        Correctly denied checking existence of ill-formed edge property
+        Correctly checked that edge property exists
+        Correctly checked that edge property does not exist
+        Correctly denied checking existence of ill-formed edge property
+    numberOfEdgeProperties
+        Correctly reported number of edge properties
+        Correctly reported number of edge properties
+    iterateOverEdgeProperties
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over edge properties
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over edge properties with given name
+        Correctly iterated over edge properties with given property class
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over edge properties with given name and property class
+        Correctly denied iterating over ill-formed property class
+        Correctly denied iterating over ill-formed edge property class
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over edge properties
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over edge properties with given name
+        Correctly iterated over edge properties with given property class
+                Function applied to Property (A well-formed property)
+                Function applied to Property (A well-formed property)
+        Correctly iterated over edge properties with given name and property class
+        Correctly denied iterating over ill-formed property class
+        Correctly denied iterating over ill-formed edge property class
+Ontology
+    attributes
+        Correctly set and retrived name
+        Correctly denied direct access to concepts
+        Correctly denied direct assignment to concepts
+        Correctly denied direct access to relationships
+        Correctly denied direct assignment to relationships
+    addConcept
+        Correctly added concept
+        Correctly denied adding concept that already exists
+        Correctly denied adding ill-formed concept
+    removeConcept
+        Correctly removed concept
+        Correctly denied removing concept that does not exist
+        Correctly denied removing an ill-formed concept
+        Correctly denied removing concept that is bound
+    removeAllConcepts
+        Correctly removed all concepts
+        Correctly denied removing concepts that are bound
+    conceptExists
+        Correctly checked that concept exists
+        Correctly checked that concept does not exist
+        Correctly denied checking existence of ill-formed concept
+    numberOfConcepts
+        Correctly reported number of concepts
+    iterateOverConcepts
+                Function applied to Concept (A well-formed concept)
+                Function applied to Concept (A well-formed concept)
+                Function applied to AnotherConcept (Another well-formed concept)
+        Correctly iterated over concepts
+                Function applied to Concept (A well-formed concept)
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over concepts with given name
+                Function applied to AnotherConcept (Another well-formed concept)
+        Correctly iterated over concepts with given concept class
+                Function applied to Concept (A well-formed concept)
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over concepts with given name and concept class
+        Correctly denied iterating over ill-formed concept class
+        Correctly denied iterating over ill-formed concept class
+    addRelationship
+        Correctly added relationship
+        Correctly denied addding relationship that already exists
+        Correctly denied adding ill-formed relationship
+        Correctly denied adding relationship that is not closed
+    removeRelationship
+        Correctly remove relationship
+        Corectly denied removing relationship that does not exist
+        Correctly denied removing ill-formed relationship
+    removeAllRelationships
+        Correctly removed all relationships
+    relationshipExists
+        Correctly checked that relationship exists
+        Correctly checked that relationship does not exist
+        Correctly denied checking existance of ill-formed relationship
+    numberOfRelationship
+        Correctly reported number of relationships
+    iterateOverRelationships
+                Function applied to Relationship (A well-formed relationship)
+                Function applied to AnotherRelationship (Another well-formed relationship)
+                Function applied to Relationship (A well-formed relationship)
+        Correctly iterated over relationships
+                Function applied to Relationship (A well-formed relationship)
+                Function applied to Relationship (A well-formed relationship)
+        Correctly iterated over relationships with given name
+                Function applied to AnotherRelationship (Another well-formed relationship)
+        Correctly iterated over relationships with given relationship class
+                Function applied to Relationship (A well-formed relationship)
+                Function applied to Relationship (A well-formed relationship)
+        Correctly iterated over relationshps with given name and concept class
+        Correctly denied iterating over ill-formed relationship class
+        Correctly denied iterating over ill-formed relationship class
+    conceptIsBound
+        Correctly checked that concept is bound
+        Correctly checked that concept is not bound
+        Correctly denied checking if an ill-formed concept is bound
+    numberOfUnboundConcepts
+        Correctly reported number of unbound concepts
+    numberOfBoundConcepts
+        Correctly reported number of bound concepts
+    iterateOverUnboundConcepts
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over unbound concepts
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over unbound concepts with given name
+        Correctly iterated over unbound concepts with given concept class
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over unbound concepts with given name and concept class
+        Correctly denied iterating over ill-formed concept class
+        Correctly denied iterating over ill-formed concept class
+    iterateOverBoundConcepts
+                Function applied to Concept (A well-formed concept)
+                Function applied to Concept (A well-formed concept)
+                Function applied to AnotherConcept (Another well-formed concept)
+        Correctly iterated over bound concepts
+                Function applied to Concept (A well-formed concept)
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over bound concepts with given name
+                Function applied to AnotherConcept (Another well-formed concept)
+        Correctly iterated over bound concepts with given concept class
+                Function applied to Concept (A well-formed concept)
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over bound concepts with given name and concept class
+        Correctly denied iterating over ill-formed concept class
+        Correctly denied iterating over ill-formed concept class
+Blackboard
+    attributes
+        Correctly set and retrieved name
+        Correctly denied direct access to concepts
+        Correctly denied direct assignment to concepts
+        Correctly denied direct access to concept classes
+        Correctly denied direct assignment to concept classes
+        Correctly denied direct access to publications
+        Correctly denied direct assignment to publications
+        Correctly denied direct access to subsubscriptions
+        Correctly denied direct assignment to subscriptions
+        Correctly denied direct access to class subscriptions
+        Correctly denied direct assignment to class subscriptions
+    publishConcept
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Published Concept)
+        Correctly published concept
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Published Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class Instance)
+        Correctly subscribed to concept class instance
+        Correctly denied adding concept that already exists
+        Correctly denied publishing ill-formed agent
+        Correctly denied publishing ill-formed concept
+    unpublishConcept
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unpublished Concept)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unpublished Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept)
+        Correctly unpublished concept
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Published Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Published Concept)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Published Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class Instance)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unpublished Concept)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unpublished Concept)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unpublished Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept)
+        Correctly unpublished all concepts
+        Correctly denied unpublishing concept that does not exist
+        Correctly denied unpublishing ill-formed concept
+    publisher
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Published Concept)
+        Correctly returned publisher
+        Correctly denied returning publisher of concept that does not exist
+        Correctly denied returning publisher of ill-formed concept
+    signalPublisher
+                Signal to AnotherAgent (A well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+        Correctly signaled publisher
+                Signal to AnotherAgent (A well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+        Correctly signaled publishers
+        Correctly denied signaling a publisher of concept that does not exist
+        Correctly denied signaling publisher of ill-formed concept
+        Correctly denied signaling publisher of ill-formed source
+        Correctly denied signaling publisher of ill-formed message
+    conceptExists
+        Correctly checked that concept exists
+        Correctly checked that concept does not exist
+        Correctly denied checking of ill-formed concept
+    numberOfConcepts
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Published Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class Instance)
+        Correctly reported number of concepts
+    iterateOverConcepts
+                Function applied to Concept (A well-formed concept)
+                Function applied to AnotherConcept (Another well-formed concept)
+        Correctly iterated over concepts
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over concepts with given name
+                Function applied to AnotherConcept (Another well-formed concept)
+        Correctly iterated over concepts with given concept class
+                Function applied to Concept (A well-formed concept)
+        Correctly iterated over concepts with given name and concept class
+        Correctly denied iterating over ill-formed concept class
+        Correctly denied iterating over ill-formed concept class
+    subscribeToConcept
+                Signal to AnotherAgent (Yet another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept)
+        Correctly subscribed to concept
+        Correctly denied subscribing to concept more than once
+        Correctly denied subscribing to concept that does not exist
+        Correctly denied subscribing by ill-formed agent
+        Correctly denied subscribing to ill-formed concept
+    unsubscribeFromConcept
+                Signal to AnotherAgent (Yet another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept)
+        Correctly unsubscribed by from all concepts by all agents
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from Concept)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from Concept)
+        Correctly unsubscribed from all concepts by agent
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from Concept)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from Concept)
+        Correctly unsubscribied from concept by all agents
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept)
+        Correctly unsubscribed from concept by agent
+        Correctly denied unsubscribing from concept that does not exist
+        Correctly denied unsubscibing from ill-formed agent
+        Correctly denied unsubscrbing from ill-formed concept
+        subscribers
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept)
+        Correctly return subscribers
+        Correctly returned subscribers
+        Correctly returned subscribers
+        Correctly denied returning subscribers from concept that does not exist
+        Correctly denied returning subscribers from ill-formed concept
+        signalSubscribers
+                Signal to AnotherAgent (Another well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+                Signal to AnotherAgent (A well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+        Correctly signaled subscribers
+                Signal to AnotherAgent (Another well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+                Signal to AnotherAgent (A well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+        Correctly signaled subscribers
+        Correctly denied signaling subscribers of concept that does not exist
+        Correctly denied signaling subscribers of ill-formed concept
+        Correctly denied signaling subscribers of ill-formed source
+        Correctly denied signaling subscribers of ill-formed message
+    subscribeToConceptClass
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept Class)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (Yet another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+        Correctly subscribed to concept class
+        Correctly subscribed to concept class
+        Correctly subscribed to concept class
+        Correctly denied subscribing to concept class more than once
+        Correctly denied subscribing by ill-formed agent
+        Correctly denied subscribing to ill-formed concept
+    unsubscribeFromConceptClass
+                Signal to AnotherAgent (Yet another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept Class)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept Class)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed From Concept Class)
+        Correctly unsubscribed by from all concept classes by all agents
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (Yet another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from Concept Class)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from Concept Class)
+        Correctly unsubcribed from all concept classes by agent
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from concept class)
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from concept class)
+        Correctly unsubscribied from concept class by all agents
+                Signal to AnotherAgent (Yet another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Unsubscribed from concept class)
+        Correctly unsubscribed from concept class by agent
+        Correctly denied unsubscribing from concept class that does not exist
+        Correctly denied unsubscibing from ill-formed agent
+        Correctly denied unsubscrbing from ill-formed concept class
+    classSubscribers
+                Signal to AnotherAgent (A well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (Another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+        Correctly return subscribers
+        Correctly returned subscribers
+        Correctly denied returning subscribers from concept class that does not exist
+        Correctly denied returning subscribers from ill-formed concept class
+    signalConceptClassSubscribers
+                Signal to AnotherAgent (Yet another well-formed agent) by Blackboard (A well-formed blackboard) regarding Relationship (Subscribed To Concept Class)
+                Signal to AnotherAgent (Another well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+                Signal to AnotherAgent (A well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+        Correctly signaled subscribers
+                Signal to AnotherAgent (Another well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+                Signal to AnotherAgent (Yet another well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+                Signal to AnotherAgent (A well-formed agent) by Concept (A well-formed source) regarding Concept (A well-formed message)
+        Correctly signaled subscribers
+        Correctly denied signaling subscribers of concept class that does not exist
+        Correctly denied signaling subscribers of ill-formed concept class
+        Correctly denied signaling subscribers of ill-formed source
+        Correctly denied signaling subscribers of ill-formed message
+Agent
+    activity
+                Activity (A well-formed agent)
+        Correctly carried out the activity
+                Activity (A well-formed agent) with parameters (A well-formed parameter)
+        Correctly carried out the activity
+        Correctly denied carrying out activity with ill-formed parameters
+    start
+                Start (A well-formed agent)
+        Correctly started the agent activity
+                Start (A well-formed agent) with parameters (A well-formed parameter)
+        Correctly started the agent activity
+        Correctly denied starting activity with ill-formed parameters
+    stop
+                Stop (A well-formed agent)
+        Correctly stopped the agent activity
+                Stop (A well-formed agent) with parameters (A well-formed parameter)
+        Correctly stopped the agent activity
+        Correctly denied starting activity with ill-formed parameters
+    pause
+                Pause (A well-formed agent)
+        Correctly paused the agent activity
+                Pause (A well-formed agent) with parameters (A well-formed parameter)
+        Correctly paused the agent activity
+        Correctly denied starting activity with ill-formed parameters
+    isAlive
+                isAlive (A well-formed agent)
+        Correctly checked that agent is alive
+    status
+                Status (A well-formed agent)
+        Correctly checked agent status
+    signal
+                Signal to AnotherAgent (A well-formed agent) by Concept (A well-defined source) regarding Concept (A well-defined message)
+        Correctly signaled the agent
+                Signal to AnotherAgent (A well-formed agent) by Concept (A well-defined source) regarding Concept (A well-defined message)
+        Correctly signaled the agent
+        Correctly denied connecting with ill-defined source
+        Correctly denied connecting with ill-defined message
+        Correctly denied connecting with ill-defined parameters
+    connect
+                Connect (A well-formed agent) to a channel (A well-defined relationship)
+        Correctly connected the agent
+                Connect (A well-formed agent) with parameters (A well-formed parameter) to a channel (A well-defined relationship)
+        Correctly connected the agent
+        Correctly denied connecting with ill-formed channel
+        Correctly denied connecting wiht ill-formed parameters

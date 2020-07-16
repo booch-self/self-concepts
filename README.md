@@ -13,8 +13,6 @@ TBD
 
 There are seven abstractions upon which all of Self's structure and behavior are built.
 
-<img src="/Documentation/Images/self_concepts.png" alt="self_concepts">
-
     Concept
     Property
     Relationship
@@ -23,6 +21,8 @@ There are seven abstractions upon which all of Self's structure and behavior are
     Agent
     
     SelfException
+    
+<img src="/Documentation/Images/self_concepts.png" alt="self_concepts">
 
 ### Concept
   
@@ -183,8 +183,6 @@ This base class serves to define the essence of every well-formed Agent. As such
 
 There are sixty-three abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.
 
-<img src="/Documentation/Images/self_concepts.png" alt="self_concepts">
-
     Meta Organizational
     Identification
     Classification
@@ -197,6 +195,8 @@ There are sixty-three abstractions organized in eleven categories that build on 
     Blackboard
     Agent
 
+<img src="/Documentation/Images/self_concepts.png" alt="self_concepts">
+
 ### Meta Organizational
 
     Model
@@ -204,6 +204,16 @@ There are sixty-three abstractions organized in eleven categories that build on 
     Layer
     Subsystem
     System
+
+Model is a collection of (typically permanant) ontologies.
+
+Society is a collection of collaborating agents.
+
+Layer is a collection of societies, all at the same level of abstraction
+
+Subsystem is a collection of ontologies, agents, and blackboards.
+
+System is a collection of subsystems that form a whole.
 
 ### Identification
 

@@ -7,7 +7,25 @@ A Slack channel for this project resides at <a href="https://booch-self.slack.co
   
 ## Architectural Principles
   
-TBD
+There several design decisions that shape the architecture of Self's foundational abstractions.
+
+* Self is a platform for embodied cognition.
+
+* Self serves to orchestrate symbolic and neural models of computation.
+
+* Self builds upon Minsky's concept of a society of mind.
+
+* Self builds on Brooks' concept of intelligence without representation.
+
+* Self balances the explicit repersentation of information with the implicit behavior of stateless and stateful agency, while at the same time, within a system, assuming that information may be incomplete, inconsistent, multi-representational, and even sometimes wrong, and that agency may be deterministic, opportunistic, and even sometimes random.
+
+* Self is designed with abstractions that fold back into themselves, permiting the explicit design of strange loops.
+
+* Self is design for scale, with a clear separation of concerns between logical and physical mechanisms.
+
+-- link to Minsky paper
+-- link to Brook's paper
+-- link to ontology paper (https://bib.irb.hr/datoteka/314767.174.pdf)
   
 ## Self Concepts
 

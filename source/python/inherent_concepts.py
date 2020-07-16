@@ -6,6 +6,7 @@ This module declares Self's inherent concepts:
     Meta Organizational
 
         Model
+        Theory
         Society
         Layer
         Subsystem
@@ -116,7 +117,8 @@ from self_concepts import SelfException
 
 # Meta organizational
 
-class Model(Ontology): pass                 # Collection of (typically permanent) ontologies
+class Model(Ontology): pass                 # Collection of ontologies capturing past/current state
+class Theory(Ontology): pass                # Collection of ontologies capturing future state
 class Society(Ontology): pass               # Collection of collaborating agents
 class Layer(Ontology): pass                 # Collection of societies, all at the same level of abstraction
 class Subsystem(Ontology): pass             # Collection of ontologies, agents, and blackboards

@@ -56,6 +56,7 @@ This module declares Self's inherent concepts:
         InteractsWith
         NoInteractionWith
         EnclosesA
+        IntersectsA
         PlacementIn
         PlacementWith
 
@@ -170,9 +171,10 @@ class Orientation(Property): pass           # Absolute or relative direction in 
 
 class HasContactWith(Relationship): pass    # Concept has direct connection to another concept
 class HasNoContactWith(Relationship): pass  # Concept has no direct connection to another concept
-class InteractsWith(Relationship): pass     # Concept has has collaborative connection to another concept
-class NoInteractionWith(Relationship): pass # Concept has no collabortive connection to another concept
+class InteractsWith(Relationship): pass     # Concept has collaborative connection with another concept
+class NoInteractionWith(Relationship): pass # Concept has no collabortive connection with another concept
 class EnclosesA(Relationship): pass         # Concept contains another concept
+class IntersectsA(Relationship): pass       # Concept intersects another concept
 class PlacementIn(Relationship): pass       # Absolute position and/or orientation within another concept
 class PlacementWith(Relationship): pass     # Relative postion and/or orientation to another concept
 
@@ -206,17 +208,17 @@ class ConstraintOn(Relationship): pass      # Concept opposes another concept in
 # Relational
 
 class Weight(Property): pass                # Edge property representing value-based qualification
-class Directed(Property): pass              # Edge property representing directonality
+class Directed(Property): pass              # Edge property representing directionality
 
 class Describes(Relationship): pass         # Concept describes another concept
 Represents = Describes                      # Alias to Describes
 Specifies = Describes                       # Alias to Describes
 class Realizes(Relationship): pass          # Concept makes manifest another concept
 class Satisfies(Relationship): pass         # Concept meets the conditions of another concept
-class Delivers(Relationship): pass          # Concept makes manafest concept for another concept
+class Delivers(Relationship): pass          # Concept makes manifest a concept for another concept
 class Influences(Relationship): pass        # Concept encourages or inhibits another concept
 class Encourages(Relationship): pass        # Concept promotes activity of another concept
-class Inhibits(Relationship): pass          # Concept demotes activity of another concept
+class Inhibits(Relationship): pass          # Concept discourages activity of another concept
 
 # Blackboard concepts
 

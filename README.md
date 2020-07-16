@@ -178,6 +178,17 @@ Agent is a Concept defining a self-directed locus of activity. An Agent is an ac
 
 This base class serves to define the essence of every well-formed Agent. As such, its specification is minimal; it is expected to have subclasses that provide attributes, implementations of these base methods, and additional methods. Type checking of parameters, sources, messages, and channels are strictly enforced.
 
+### SelfException
+
+SelfException is a class whose instances are used to report on Concepts that are not well-formed or that behave badly. The primary responsibility of a SelfException is to name the dysfunctional behavior.
+
+    attribute:
+    
+        errorMessage
+
+The attribute is public. Type checking of the error message is not enforced.
+
+
 ## Inherent Concepts
 
 There are eighty abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.

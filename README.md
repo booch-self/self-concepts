@@ -233,7 +233,9 @@ There are eighty abstractions organized in eleven categories that build on Self'
     Subsystem
     System
 
-Model is an Ontology representing a collection of (typically permanant) ontologies.
+Model is an Ontology representing past/current state.
+
+Theory is an Ontology representing potential/future state.
 
 Society is an Ontology representing a collection of collaborating agents.
 

@@ -7,26 +7,32 @@ A Slack channel for this project resides at <a href="https://booch-self.slack.co
   
 ## Architectural Principles
   
-There several design decisions that shape the architecture of Self's foundational abstractions.
+There are six design decisions that shape the architecture of Self's foundational abstractions.
 
-* Self is a platform for embodied cognition.
+* A system is composed of a constellation of mindless agents that collaborate to yield emergment mindful behavior.
 
-* Self serves to orchestrate symbolic and neural models of computation.
+-- Minsky
 
-* Self builds upon Minsky's concept of a society of mind.
+* A system's knowledge of its outer context, the representation of that knowledge, and the knowledge of the system's inner state are assumed to be incomplete, contradictory, multi-modal, and often wrong.
 
-* Self builds on Brooks' concept of intelligence without representation.
+-- Brooks (embodiment and subsumption) and Kahanem
 
-* Self balances the explicit repersentation of information with the implicit behavior of stateless and stateful agency, while at the same time, within a system, assuming that information may be incomplete, inconsistent, multi-representational, and even sometimes wrong, and that agency may be deterministic, opportunistic, and even sometimes random.
+* Every system possesses a small set of inherent concepts.
 
-* Self is designed with abstractions that fold back into themselves, permiting the explicit design of strange loops.
+-- Marcus and Storga (https://bib.irb.hr/datoteka/314767.174.pdf)
 
-* Self is design for scale, with a clear separation of concerns between logical and physical mechanisms.
+* A system is full of strange loops.
 
--- link to Minsky paper
--- link to Brook's paper
--- link to ontology paper (https://bib.irb.hr/datoteka/314767.174.pdf)
-  
+-- Hofstadter
+
+* There exists a clear separation of concerns between the logical and physical elements of the system
+
+-- concurrency and distribution/edge and cloud
+
+* Scale and security at scale are fundamental properties that are made manifest by assuming that the systems' underlying computational fabric is unreliable and insecure.
+
+
+
 ## Self Concepts
 
 There are seven abstractions upon which all of Self's structure and behavior are built.

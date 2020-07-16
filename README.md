@@ -26,7 +26,7 @@ There are seven abstractions upon which all of Self's structure and behavior are
 
 ### Concept
   
-Concept is Self's central abstraction. Everything is a Concept (and a Concept is conidered to be a kind of Concept). The primary responsibilities of a Concept are to name an abstraction and to define its characteristics.
+Concept is Self's central abstraction. Everything is a Concept (and even a Concept is considered to be a kind of Concept). The primary responsibilities of a Concept are to name an abstraction and to define its characteristics.
 
     attributes:
     
@@ -180,7 +180,7 @@ This base class serves to define the essence of every well-formed Agent. As such
 
 ## Inherent Concepts
 
-There are seventy-nine abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.
+There are eighty abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.
 
     Meta Organizational
     Identification
@@ -204,15 +204,15 @@ There are seventy-nine abstractions organized in eleven categories that build on
     Subsystem
     System
 
-Model is an Ontology, representing a collection of (typically permanant) ontologies.
+Model is an Ontology representing a collection of (typically permanant) ontologies.
 
-Society is an Ontology, representing a collection of collaborating agents.
+Society is an Ontology representing a collection of collaborating agents.
 
-Layer is an Ontology, representing a collection of societies, all at the same level of abstraction
+Layer is an Ontology representing a collection of societies, all at the same level of abstraction
 
-Subsystem is an Ontology, representing a collection of ontologies, agents, and blackboards.
+Subsystem is an Ontology representing a collection of ontologies, agents, and blackboards.
 
-System is an Ontology, representing a collection of subsystems that form a whole.
+System is an Ontology representing a collection of subsystems that form a whole.
 
 ### Identification
 
@@ -220,7 +220,7 @@ System is an Ontology, representing a collection of subsystems that form a whole
     
     AliasFor
     IsA
-    
+
 Identity is a Property representing an internal/secret name for a concept.
 
 AliasFor is a Relationship representing an alternate for a concept.
@@ -233,7 +233,7 @@ IsA is a Relationship representing that a concept is an instance of another conc
     SimilarTo
     UnlikeA
 
-AKindOf is a Relationship representing that a concept is a subclass of anohter concept.
+AKindOf is a Relationship representing that a concept is a subclass of another concept.
 
 SimilarTo is a Relationship representing that a concept shares characteristics with another concept.
 
@@ -257,17 +257,17 @@ State is a Concept representing an instance or region in a landscape of n-diment
 
 Operator is a Concept representing an instigator of stateless/stateful activity.
 
-Operand is a Concept representing a target of statless/stateful activity.
+Operand is a Concept representing a target of stateless/stateful activity.
 
 Instrument is a Concept representing a mechanism contributing to stateless/stateful activity.
 
 Resource is a Concept representing finite/invinite material used for stateless/stateful activity.
 
-Input is a Concept representing a Signal entering system boundary. Sensor is an alias for Input.
+Input is a Concept representing a Signal entering a system boundary. Sensor is an alias for Input.
 
-Output is a Concept representing a Signal leaving system boundary. Actuator is an alias for Output.
+Output is a Concept representing a Signal leaving a system boundary. Actuator is an alias for Output.
 
-InputOutput is a Concept representing a Signal entering and leaving system boundary.
+InputOutput is a Concept representing a Signal entering and leaving system boundary. SensorActuator is an alias for InputOutput.
 
 ### Compositional
 
@@ -277,13 +277,24 @@ InputOutput is a Concept representing a Signal entering and leaving system bound
     MemberOf
     PortionOf
 
+ComponentOf is a Concept representing a structural part of another concept. PartOf is an alias for ComponentOf.
+
+ChildOf is a Concept representing a product of another concept.
+
+ElementOf is a Concept representing a functional part of another concept.
+
+MaterialOf is a Concept representing an elemental part of another concept.
+
+MemberOf is a Concept representing a community member of another concept.
+
+PortionOf is a Concept representing an quantifiable member of another concept.
+
 ### Spatial
 
     Location
     Position
     Orientation
-        
-    Location
+    
     HasContactWith
     HasNoContactWith
     InteractsWith
@@ -292,30 +303,70 @@ InputOutput is a Concept representing a Signal entering and leaving system bound
     PlacementIn
     PlacementWith
 
+Location is a Property representing a named place in logical or physical space.
+
+Position is a Property representing an instance or region in the landscape of three-dimensional space.
+
+Orientation is a Property representing an absolute or relative dirction in three-dimensional space.
+
+HasContactWith is a Relationship representing a concept has direct connection to another concept.
+
+HasNoContactWith is a Relationship representing a concept has no direct contact to another concept.
+
+InteractsWith is a Relationship representing collaborative connection with another concept.
+
+NoInteractionWith is a Relationship representing no collaborative connection with another concept.
+
+EnclosesAs is a Relationship representing concept contains another concept.
+
+Intersects is a Relationship representing concept intersects another concept.
+
+PlacementIn is a Relationship representing an absolute or relative position and/or orientation within another concept.
+
+PlacementWith is a Relationship representing an absolute or relative position and/or orientation to another concept.
+
 ### Temporal
 
     Date
     Time
     DateTime
-
+    
     Before
     After
     CoOccurs
+
+Date is a Property representing an absolute or relative date.
+
+Time is a Property representing an absolute or relative time.
+
+DateTime is a Property representing a date and time.
+
+Before is a Relationship representing a concept precedes another concept in time.
+
+After is a Relationship representing a concept follows another concept in time.
+
+CoOccurs is a Relationship representing a concept is concurrent with another concept in time.
 
 ### Causal
 
     Goal/Aim/Purpose/Reason
     Cause/Stimuli/Factor
     Consequence/Result/Response/Effect
-
+    
     PreconditionOf
     ConstraintOn
+
+Goal is  a Concept representing a desired state. Aim, Purpose, and Reason are aliases for Goal.
+
+Cause is a Concept representing a precipitating concept. Stimuli and Factor are aliases for Cause.
+
+Consequence is a Concept reprsenting the outcome of some causal chain. Result, Response, and Effect are aliases for Consequence.
 
 ### Relational
 
     Weight
     Directed
-        
+    
     Describes/Represents/Specifies
     Realizes
     Satisfies
@@ -324,10 +375,32 @@ InputOutput is a Concept representing a Signal entering and leaving system bound
     Encourages
     Inhibits
 
+Weight is a Property of a Relationship edge, representing a value-based qualification.
+
+Directed is a Property of a Relationship edge, representing directionality.
+
+Describes is a Relationship representing a concept that describes another concept. Represents and Specifies are aliases for Describes.
+
+Realizes is a Relationship representing a concept that makes manifest another concept.
+
+Satisfies is a Relationship representing a concept that meets the conditions of another concept.
+
+Delivers is a Relationship representing a concept that makes manifest a concept for another concept.
+
+Influences is a Relationshp representing a concept that encourages or inhibits another concept.
+
+Encourages is a Relationship representing a concept that promotes the activity of another concept.
+
+Inhibits is a Relationshp representing a concept that discourages the activity of another concept.
+
 ### Blackboard
 
     Publication
     Subscription
+
+Publication is a Relationship representing the reification of an agent publishing or withdrawing a concept.
+
+Subscription is a Relationship representing the reification of an agent subscribing or unsubscribing a concept or a concept class.
 
 ### Agent
 
@@ -336,3 +409,13 @@ InputOutput is a Concept representing a Signal entering and leaving system bound
     Parameters
     Channel
     Status
+
+Source is a Concept representing the reification of a signal source.
+
+Message is a Concept representing the reification of a signal message.
+
+Parameters is a Concept representing the reification of agent method parameters.
+
+Channel is a Concept representing the reification of a connection path.
+
+Status is a Concept representing the reification of agent state.

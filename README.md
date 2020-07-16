@@ -21,7 +21,7 @@ There are seven abstractions upon which all of Self's structure and behavior are
     Agent
     
     SelfException
-    
+
 <img src="/Documentation/Images/self_concepts.png" alt="self_concepts">
 
 ### Concept
@@ -29,19 +29,19 @@ There are seven abstractions upon which all of Self's structure and behavior are
 Concept is Self's central abstraction. Everything is a Concept (and a Concept is conidered to be a kind of Concept). The primary responsibilities of a Concept are to name an abstraction and to define its characteristics.
 
     attributes:
-
+    
         name
         properties
-
+    
     methods:
-
+    
         addProperty
         removeProperty
         removeAllProperties
-
+    
         propertyExists
         numberOfProperties
-
+    
         iterateOverProperties
 
 Attributes are protected so as to ensure a proper separation of concerns between interface and implementation. Type checking of names is not enforced; type checking of properties and property classes are strictly enforced.
@@ -51,7 +51,7 @@ Attributes are protected so as to ensure a proper separation of concerns between
 Property is a Concept defining a name/value pair. Dictionaries are a common way of representing key/value pairs, but Property is a subtly different abstraction: a Property reifies a name/value relationship, making it possible to define different Property classes and to manipulate individual Property instances. The primary responsibility of a Property is to define some characteristic of another Concept
 
    attributes:
-
+    
         value
 
  The attribute is protected so as to ensure a proper separation of concerns between interface and implementation. Type checking of value is not enforced.
@@ -61,21 +61,21 @@ Property is a Concept defining a name/value pair. Dictionaries are a common way 
 Relationship is a Concept defining the connection between two other Concepts or Concept classes, each edge of which may have its own Properties. The primary responsibility of a Relationship is to define the meaning of how two Concepts or Concept classes are connected to one another.
 
     attributes:
-
+    
         edge1
         edge2
         edge1Properties
         edge2Properties
-
+    
     methods:
-
+    
         addPropertyToEdge
         removePropertyFromEdge
         removeAllEdgeProperties
-
+    
         edgePropertyExists
         numberOfEdgeProperties
-
+    
         iterateOverEdgeProperties
 
 Attributes are protected so as to ensure a proper separation of concerns between interface and implementation. Type checking of edges, properties, and property classes are strictly enforced.
@@ -85,75 +85,74 @@ Attributes are protected so as to ensure a proper separation of concerns between
 Ontology is a Concept defining a collection of Concepts together with their Relationships. An Ontology is guaranteed to be closed (a Relationship can only refer to a Concept that is part of that Ontology) and complete (a Relationship cannot have a dangling edge). An Ontology is sometimes ephemeral (meaning that its state persists only for the lifetime of its parent) but most often is meant to define a more permanant artifact (one whose state persists across time). The primary responsiblities of an Ontology are to define the vocabulary, the meaning, and/or the state of particular domain.
 
     attributes:
-
+    
         concepts
         relationships
-
+    
     methods:
-
+    
         addConcept
         removeConcept
         removeAllConcepts
-
+    
         conceptExists
         numberOfConcepts
-
+    
         iterateOverConcepts
-
+    
         addRelationship
         removeRelationship
         removeAllRelationships
-
+    
         relationshipExists
- 
+     
         numberOfRelationships
-
+    
         iterateOverRelationships
-
+    
         conceptIsBound
         numberOfUnboundConcepts
         numberOfBoundConcepts
-
+    
         iterateOverUnboundConcepts
         iterateOverBoundConcepts
 
 Attributes are protected so as to ensure a proper separation of concerns between interface and implementation. Type checking of concepts, relationships, concept classes, and relationship classes is strictly enforced.
-    '''
 
 ### Blackboard
 
 Blackboard is a Concept defining a collection of Concepts, each of which is published by an Actor and each to which an Actor may subscribe, such that the publisher and/or the subscriber can be signaled about interesting events concerning that Concept. An Actor may subscribe to a Concept class, such that when an instance of that Concept class is published by some Actor, a subscription to that Concept is made manifest. A Blackboard is guaranteed to be closed subscriptions can only refer to a Concept or a Concept class that is part of the Blackboard). A Blackboard is generally ephemeral (meaning that its state persists only for the lifetime of its parent). The primary responsibility of a Blackboard is to define a bounded context for a society of Actors who wish to collaborate around the state space of a shared collection of Concepts.
 
     attributes:
-
+    
         concepts
         conceptClasses
         publications
         conceptSubscriptions
         classSubcriptions
-
+    
     methods:
-
+    
         publishConcept
         unpublishConcept
-
+    
         publisher
         signalPublisher
-
+    
         conceptExists
         numberOfConcepts
-
+    
         iterateOverConcepts
-
+    
         subscribeToConcept
         unsubscribeFromConcept
-
+    
         subscribers
         signalSubscribers
-
+    
         subscribeToConceptClass
         unsubscribeFromConceptClass
-
+    
         classSubscribers
         signalConceptClassSubscribers
 
@@ -162,26 +161,26 @@ Attributes are protected so as to ensure a proper separation of concerns between
 ### Agent
 
 Agent is a Concept defining a self-directed locus of activity. An Agent is an actor that has identify (it can be distinguished among all other Agents), agency (within its bounded context, it exhibits independent activity), concurrency (it carries out its activity in parallel with all other Agents), and state (it can act and react to as well as alter the state of its contex and/or its internal condition). Agents are typically organized into societies that collaborate with one another around the state space of a shared collection of Concepts as defined by a Blackboard; those societies of agents are typically further organized into nearly independent, hierarchical layers. Agents may communicate directly with one another via synchronous and/or asynchronous channels. An Agent is partly emphemeral (meaning that its state is vibrantly active during its lifetime) and partly permanant (meaning that some internal state may be preserved across invocations of the Agent). The concurrent behavior of an Agent is made manifest at deployment; at the logical level, an Agent neither assumes nor provides any intrinsic mechanisms for threading or for synchronization. The primary responsibility of an Agent is to reify an independent activity.
-
-        methods:
-
-            activity
-
-            start
-            stop
-            pause
-
-            isAlive
-            status
-
-            signal
-            connect
+    
+    methods:
+    
+        activity
+    
+        start
+        stop
+        pause
+    
+        isAlive
+        status
+    
+        signal
+        connect
 
 This base class serves to define the essence of every well-formed Agent. As such, its specification is minimal; it is expected to have subclasses that provide attributes, implementations of these base methods, and additional methods. Type checking of parameters, sources, messages, and channels are strictly enforced.
 
 ## Inherent Concepts
 
-There are sixty-three abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.
+There are seventy-nine abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.
 
     Meta Organizational
     Identification
@@ -195,7 +194,7 @@ There are sixty-three abstractions organized in eleven categories that build on 
     Blackboard
     Agent
 
-<img src="/Documentation/Images/self_concepts.png" alt="self_concepts">
+<img src="/Documentation/Images/inherent_concepts.png" alt="inherent_concepts">
 
 ### Meta Organizational
 
@@ -205,15 +204,15 @@ There are sixty-three abstractions organized in eleven categories that build on 
     Subsystem
     System
 
-Model is a collection of (typically permanant) ontologies.
+Model is an Ontology, representing a collection of (typically permanant) ontologies.
 
-Society is a collection of collaborating agents.
+Society is an Ontology, representing a collection of collaborating agents.
 
-Layer is a collection of societies, all at the same level of abstraction
+Layer is an Ontology, representing a collection of societies, all at the same level of abstraction
 
-Subsystem is a collection of ontologies, agents, and blackboards.
+Subsystem is an Ontology, representing a collection of ontologies, agents, and blackboards.
 
-System is a collection of subsystems that form a whole.
+System is an Ontology, representing a collection of subsystems that form a whole.
 
 ### Identification
 
@@ -222,12 +221,24 @@ System is a collection of subsystems that form a whole.
     AliasFor
     IsA
     
+Identity is a Property representing an internal/secret name for a concept.
+
+AliasFor is a Relationship representing an alternate for a concept.
+
+IsA is a Relationship representing that a concept is an instance of another concept.
+
 ### Classification
 
     AKindOf
     SimilarTo
     UnlikeA
-    
+
+AKindOf is a Relationship representing that a concept is a subclass of anohter concept.
+
+SimilarTo is a Relationship representing that a concept shares characteristics with another concept.
+
+UnlikeA is a Relationship representing that a concept has characteristics orthogonal to another concept.
+
 ### Role
 
     Event/Action/Occurrence
@@ -239,6 +250,24 @@ System is a collection of subsystems that form a whole.
     Input/Sensor
     Output/Acutator
     InputOutput
+
+Event is a Concept representing an instance in time/space, typically demarking a state change. Action and Occurrence are alias for Event.
+
+State is a Concept representing an instance or region in a landscape of n-dimentional potentials. Condition is an alias for State.
+
+Operator is a Concept representing an instigator of stateless/stateful activity.
+
+Operand is a Concept representing a target of statless/stateful activity.
+
+Instrument is a Concept representing a mechanism contributing to stateless/stateful activity.
+
+Resource is a Concept representing finite/invinite material used for stateless/stateful activity.
+
+Input is a Concept representing a Signal entering system boundary. Sensor is an alias for Input.
+
+Output is a Concept representing a Signal leaving system boundary. Actuator is an alias for Output.
+
+InputOutput is a Concept representing a Signal entering and leaving system boundary.
 
 ### Compositional
 

@@ -219,7 +219,7 @@ class Property(Concept):
 # Relationship
 
 class Relationship(Concept):
-    '''A Relationship is a Concept defining the connection between two other Concepts or
+    '''Relationship is a Concept defining the connection between two other Concepts or
     Concept classes, each edge of which may have its own Properties. The primary responsibility
     of a Relationship is to define the meaning of how two Concepts or Concept classes are
     connected to one another.
@@ -487,7 +487,7 @@ class Relationship(Concept):
 # Ontology
 
 class Ontology(Concept):
-    '''An Ontology is a Concept defining a collection of Concepts together with their
+    '''Ontology is a Concept defining a collection of Concepts together with their
     Relationships. An Ontology is guaranteed to be closed (a Relationship can only refer to a
     Concept that is part of that Ontology) and complete (a Relationship cannot have a dangling
     edge). An Ontology is sometimes ephemeral (meaning that its state persists only for the
@@ -902,7 +902,7 @@ class Ontology(Concept):
 # Blackboard
 
 class Blackboard(Concept):
-    '''A Blackboard is a Concept defining a collection of Concepts, each of which is published
+    '''Blackboard is a Concept defining a collection of Concepts, each of which is published
     by an Actor and each to which an Actor may subscribe, such that the publisher and/or the
     subscriber can be signaled about interesting events concerning that Concept. An Actor may
     subscribe to a Concept class, such that when an instance of that Concept class is
@@ -1523,7 +1523,7 @@ class Blackboard(Concept):
 # Agent
 
 class Agent(Concept):
-    '''An Agent is a Concept defining a self-directed locus of activity. An Agent is an actor
+    '''Agent is a Concept defining a self-directed locus of activity. An Agent is an actor
     that has identify (it can be distinguished among all other Agents), agency (within its
     bounded context, it exhibits independent activity), concurrency (it carries out its
     activity in parallel with all other Agents), and state (it can act and react to as well as

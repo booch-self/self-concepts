@@ -34,7 +34,7 @@ This module declares Self's inherent concepts:
         Resource
         Input/Sensor
         Output/Acutator
-        InputOutput
+        InputOutput/SensorActuator
 
     Compositional
 
@@ -113,7 +113,7 @@ from self_concepts import Blackboard
 from self_concepts import Agent
 from self_concepts import SelfException
 
-# Meta organizatioal
+# Meta organizational
 
 class Model(Ontology): pass                 # Collection of (typically permanent) ontologies
 class Society(Ontology): pass               # Collection of collaborating agents
@@ -131,7 +131,7 @@ class IsA(Relationship): pass               # Concept is an instance of another 
 # Classification
 
 class AKindOf(Relationship): pass           # Concept is a subclass of another concept
-class SimilarTo(Relationship): pass         # Concept share characteristics of another concept
+class SimilarTo(Relationship): pass         # Concept shares characteristics of another concept
 class UnlikeA(Relationship): pass           # Concept has characteristics orthogonal to another concept
 
 # Role
@@ -150,6 +150,7 @@ Sensor = Input                              # Alias to Input
 class Output(Concept): pass                 # Signal leaving system boundary
 Actuator = Output                           # Alias to Output
 class InputOutput(Concept): pass            # Signal entering and leaving system boundary
+SensorActuator = InputOutput                # Alias to InputOutput
 
 # Compositional
 

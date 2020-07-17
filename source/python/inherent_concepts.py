@@ -5,6 +5,7 @@ This module declares Self's inherent concepts:
 
     Meta Organizational
 
+        Mesh
         Model
         Theory
         Society
@@ -117,6 +118,7 @@ from self_concepts import SelfException
 
 # Meta organizational
 
+class Mesh(Ontology): pass                  # Collection of agents and their connections representing a collaborative fabric
 class Model(Ontology): pass                 # Collection of ontologies capturing past/current state
 class Theory(Ontology): pass                # Collection of ontologies capturing potential/future state
 class Society(Ontology): pass               # Collection of collaborating agents

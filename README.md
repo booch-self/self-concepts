@@ -11,11 +11,11 @@ There are six design decisions that shape the architecture of Self's foundationa
 
 * A system is composed of a constellation of mindless agents that collaborate to yield emergment mindful behavior.
 
--- Minsky
+This is Minsky's concept of <a href="https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135">The Society of Mind</a>. There are many consequences to this architectural decision, the most important of which are that agents are abstracted to be the elementary units of behavior in the system and that they communicate opportunistially via blackboards using a pub/sub mechanism as well as deterministaily via a mesh of peer-to-peer signals and channels.
 
 * A system's knowledge of its outer context, the representation of that knowledge, and the knowledge of the system's inner state are assumed to be incomplete, contradictory, multi-modal, and often wrong.
 
--- Brooks (embodiment and subsumption) and Kahanem
+This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a>. There are many consequences to this architectural decision, the most important of which are the-- Brooks (embodiment and subsumption) and Kahanem
 
 * Every system possesses a small set of inherent concepts.
 
@@ -27,7 +27,7 @@ There are six design decisions that shape the architecture of Self's foundationa
 
 * There exists a clear separation of concerns between the logical and physical elements of the system
 
--- concurrency and distribution/edge and cloud
+-- concurrency and distribution/edge and cloud, and runtime replacement
 
 * Scale and security at scale are fundamental properties that are made manifest by assuming that the systems' underlying computational fabric is unreliable and insecure.
 
@@ -215,7 +215,7 @@ The attribute is public. Type checking of the error message is not enforced.
 
 ## Inherent Concepts
 
-There are eighty abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.
+There are eighty-one abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.
 
     Meta Organizational
     Identification
@@ -233,11 +233,14 @@ There are eighty abstractions organized in eleven categories that build on Self'
 
 ### Meta Organizational
 
+    Mesh
     Model
     Society
     Layer
     Subsystem
     System
+
+Mesh is an Ontology representing collaborative fabric among set of agents.
 
 Model is an Ontology representing past/current state.
 

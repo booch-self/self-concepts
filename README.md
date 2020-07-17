@@ -11,27 +11,27 @@ There are six principless that shape the architecture of Self's foundational abs
 
 * Mindful systemic behavior emerges from a constellation of mindless agents.
 
-This is Minsky's concept of <a href="https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135">The Society of Mind</a>. There are many consequences to this architectural decision, the most important of which are that agents are reified to be the system's elementary units of behavior and so are designed to communicate opportunistially via blackboards (using a pub/sub mechanism) as well as deterministically via a mesh (using peer-to-peer signals and channels).
+This is Minsky's concept of <a href="https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135">The Society of Mind</a>. There are many consequences to this architectural principle, the most important of which are that agents are reified to be the system's elementary units of behavior and so are designed to communicate opportunistially via blackboards (using a pub/sub mechanism) as well as deterministically via a mesh (using peer-to-peer signals and channels).
 
 * Assume that a system's knowledge of its outer context, the representation of that knowledge, and the knowledge of the system's inner state are incomplete, contradictory, multi-modal, sometimes intractable, and often wrong.
 
-This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a> There are many consequences to this architectural decision, the most important of which are that embodiment is treated as a necessary reality and that societies of agents are designed to work at different levels of abstractions (in what is called a subsumption architecture), yielding behavior that rises along a spectrum of System 1 to System 2 agency (this is Kahanem's concepts of <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thining, Fast and Slow</a>.
+This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a> There are many consequences to this architectural principle, the most important of which are that embodiment is treated as a necessary reality and that societies of agents are designed to work at different levels of abstractions (in what is called a subsumption architecture), yielding behavior that rises along a spectrum of agency from System 1 to System 2, using Kahanem's concept of <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thining, Fast and Slow</a>.
 
 * Every system possesses a small set of inherent concepts.
 
-This is Marcus's concept of <a href="https://arxiv.org/pdf/1801.05667.pdf">innateness</a> and made further manifest with the <a href="https://bib.irb.hr/datoteka/314767.174.pdf">ontological concepts</a> of Storga Marjanovic, and Andereasen. There are many consequences to this architectural decision, the most important of which are the presence of a sufficient but necessary set of innate abstractions and mechanism (sufficient in the sense that they offer a vocabulary expressive enough to address a wide spectrum of domain knowledge and systemic behavior; necessary in the sense that while it can be assumed that every one of these innate concepts could evolve organically , we choose to not wait the several million years - in software time, that is - for a system to evolve them from the void).
+This is Marcus's concept of <a href="https://arxiv.org/pdf/1801.05667.pdf">innateness</a> and is made further manifest with the <a href="https://bib.irb.hr/datoteka/314767.174.pdf">ontological concepts</a> of Storga, Marjanovic, and Andereasen. There are many consequences to this architectural principle, the most important of which are the presence of a sufficient but necessary set of innate abstractions and mechanisms (sufficient in the sense that they offer a vocabulary expressive enough to address a wide spectrum of domain knowledge and systemic behavior; necessary in the sense that while it can be assumed that every one of these innate concepts could evolve organically , we choose to not wait the several million years - in software time, that is - for a system to evolve them from the void).
 
-* A system is full of strange loops.
+* Strange loops are the catalyst for yielding the illusion of highly complex behavior.
 
--- Hofstadter
+This is Hofstadter's concept first expressed in <a href="https://www.amazon.com/Gödel-Escher-Bach-Eternal-Golden/dp/0465026567">Godel, Escher, Bach</a>. The primary consequence of this architectural principle is that Self's foundational abstractions are intentionally self-refrential, making possible reflective knowledge and reflective action.
 
-* There exists a clear separation of concerns between the logical and physical elements of the system
+* There must exist a clear separation of concerns between the logical and physical elements of the system.
 
--- concurrency and distribution/edge and cloud, and runtime replacement
+The primary consequences of this architectural principle are to enable run-time replaceability of agents and ontologies, to make possible the implementation of agents and ontologies in any number of programming languages, to yield relatively transparent placement on and migration of artifacts across the edge and the cloud, and to relegate the complexity of concurrency to be a systemic mechanism, not a local one to which ever artifact would have to attend.
 
-* Scale and security at scale are fundamental properties that are made manifest by assuming that the systems' underlying computational fabric is unreliable and insecure.
+* Assume deployment at scale across an underlying computational fabric that is unreliable and insecure.
 
-
+The primary consequence of this architectural principle is a decision to use encrypted microservices across containerized artifacts; coupled with the principle of strange loops, this means that - to the greatest degree possible - a system's computational fabric is known to the system itself.
 
 ## Self Concepts
 

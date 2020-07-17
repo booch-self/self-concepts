@@ -7,15 +7,15 @@ A Slack channel for this project resides at <a href="https://booch-self.slack.co
   
 ## Architectural Principles
   
-There are six design decisions that shape the architecture of Self's foundational abstractions.
+There are six principless that shape the architecture of Self's foundational abstractions:
 
-* A system is composed of a constellation of mindless agents that collaborate to yield emergment mindful behavior.
+* Mindful systemic behavior emerges from a constellation of mindless agents.
 
-This is Minsky's concept of <a href="https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135">The Society of Mind</a>. There are many consequences to this architectural decision, the most important of which are that agents are abstracted to be the elementary units of behavior in the system and that they communicate opportunistially via blackboards using a pub/sub mechanism as well as deterministaily via a mesh of peer-to-peer signals and channels.
+This is Minsky's concept of <a href="https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135">The Society of Mind</a>. There are many consequences to this architectural decision, the most important of which are that agents are reified to be the system's elementary units of behavior and so are designed to communicate opportunistially via blackboards (using a pub/sub mechanism) as well as deterministically via a mesh (using peer-to-peer signals and channels).
 
-* A system's knowledge of its outer context, the representation of that knowledge, and the knowledge of the system's inner state are assumed to be incomplete, contradictory, multi-modal, and often wrong.
+* Assume that a system's knowledge of its outer context, the representation of that knowledge, and the knowledge of the system's inner state are incomplete, contradictory, multi-modal, sometimes intractable, and often wrong.
 
-This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a>. There are many consequences to this architectural decision, the most important of which are the-- Brooks (embodiment and subsumption) and Kahanem
+This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a> There are many consequences to this architectural decision, the most important of which are that embodiment is treated as a necessary reality and that societies of agents are designed to work at different levels of abstractions (in what is called a subsumption architecture), yielding a spectrum of System 1 to System 2 behavior (using Kahanem's concepts of <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thining, Fast and Slow</a>.
 
 * Every system possesses a small set of inherent concepts.
 

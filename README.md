@@ -23,7 +23,7 @@ This is Marcus's concept of <a href="https://arxiv.org/pdf/1801.05667.pdf">innat
 
 * Strange loops are the catalyst for yielding the illusion of highly complex behavior.
 
-This is Hofstadter's concept first expressed in <a href="https://www.amazon.com/Gödel-Escher-Bach-Eternal-Golden/dp/0465026567">Godel, Escher, Bach</a>. The primary consequence of this architectural principle is that Self's foundational abstractions are intentionally self-refrential, making possible reflective knowledge and reflective action.
+This is Hofstadter's concept first expressed in <a href="https://www.amazon.com/Gödel-Escher-Bach-Eternal-Golden/dp/0465026567">Godel, Escher, Bach</a>. The primary consequence of this architectural principle is that Self's foundational abstractions are intentionally self-referential, making possible reflective knowledge and reflective action.
 
 * There must exist a clear separation of concerns between the logical and physical elements of the system.
 

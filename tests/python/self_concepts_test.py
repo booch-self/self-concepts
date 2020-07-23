@@ -4,7 +4,10 @@ self_concepts_test
 This module serves as the unit test for self_concepts
 '''
 
-import argparse
+import argparse, sys
+
+sys.path.append('../../source/python')
+
 from self_concepts import Concept
 from self_concepts import Property
 from self_concepts import Relationship

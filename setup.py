@@ -14,8 +14,7 @@ setuptools.setup(
     long_description_content_type = 'text/markdown',
     keywords = 'self agi neuro-symbolic',
     url = 'https://github.com/booch-self/self-concepts',
-    packages = ['self_concepts'],
-    package_dir = ['self_concepts': 'source/python'],
+    packages = find_packages(where='source'),
     classifiers = [
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',

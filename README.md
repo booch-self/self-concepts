@@ -35,7 +35,7 @@ The primary consequence of this architectural principle is a decision to use enc
 
 ## Self Concepts
 
-<img src="/Documentation/Images/self_concepts.png" alt="self_concepts">
+<img src="https://github.com/booch-self/self-concepts/tree/master/Documentation/Images/self_concepts.png" alt="self_concepts">
 
 There are seven abstractions upon which all of Self's structure and behavior are built.
 
@@ -215,7 +215,7 @@ The attribute is public. Type checking of the error message is not enforced.
 
 ## Inherent Concepts
 
-<img src="/Documentation/Images/inherent_concepts.png" alt="inherent_concepts">
+<img src="https://github.com/booch-self/self-concepts/tree/master/Documentation/Images/inherent_concepts.png" alt="inherent_concepts">
 
 There are eighty-one abstractions organized in eleven categories that build on Self's foundational abstractions and collectively which provide a common vocabulary at a slightly higher level of abstraction for the purpose of making various important systemic patterns manifest.
 

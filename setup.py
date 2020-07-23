@@ -1,9 +1,10 @@
-import setuptools
+from setuptools import setup
+from setuptools import find_packages
 
 with open('README.md', 'r') as readMe:
     long_description = readMe.read()
 
-setuptools.setup(
+setup(
 
     name = 'self_concepts',
     version = '1.0',

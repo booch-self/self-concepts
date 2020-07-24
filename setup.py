@@ -17,10 +17,10 @@ setup(
     url = 'https://github.com/booch-self/self-concepts',
     packages = find_packages(where='source'),
     classifiers = [
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.0',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent'
     ],
-    python_requires = '>=3.8'
+    python_requires = ' >= 3.0'
 
 )

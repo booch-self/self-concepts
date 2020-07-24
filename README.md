@@ -15,7 +15,7 @@ This is Minsky's concept of <a href="https://www.amazon.com/Society-Mind-Marvin-
 
 * Assume that a system's knowledge of its outer context, the representation of that knowledge, and the knowledge of the system's inner state are incomplete, contradictory, multi-modal, sometimes intractable, and often wrong.
 
-This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a> There are many consequences to this architectural principle, the most important of which are that embodiment is treated as a necessary reality and that societies of agents are designed to work at different levels of abstractions (in what is called a subsumption architecture), yielding behavior that rises along a spectrum of agency from System 1 to System 2, using Kahanem's concept of <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thining, Fast and Slow</a>.
+This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a> There are many consequences to this architectural principle, the most important of which are that embodiment is treated as a necessary reality and that societies of agents are designed to work at different levels of abstractions (in what is called a subsumption architecture), yielding behavior that rises along a spectrum of agency from System 1 to System 2, using Kahanem's concept of <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow</a>.
 
 * Every system possesses a small set of inherent concepts.
 

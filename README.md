@@ -7,7 +7,7 @@ A Slack channel for this project resides at <a href="https://booch-self.slack.co
   
 ## Architectural Principles
   
-There are six principless that shape the architecture of Self's foundational abstractions:
+There are six principles that shape the architecture of Self's foundational abstractions:
 
 * Mindful systemic behavior emerges from a constellation of mindless agents.
 
@@ -15,7 +15,7 @@ This is Minsky's concept of <a href="https://www.amazon.com/Society-Mind-Marvin-
 
 * Assume that a system's knowledge of its outer context, the representation of that knowledge, and the knowledge of the system's inner state are incomplete, contradictory, multi-modal, sometimes intractable, and often wrong.
 
-This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a>. There are many consequences to this architectural principle, the most important of which are that embodiment is treated as a necessary reality and that societies of agents are designed to work at different levels of abstractions (in what is called a subsumption architecture), yielding behavior that rises along a spectrum of agency from System 1 to System 2, using Kahanem's concept of <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow</a>.
+This is Brook's concept of <a href="http://people.csail.mit.edu/brooks/papers/representation.pdf">intelligence without representation</a>. There are many consequences to this architectural principle, the most important of which are that embodiment is treated as a necessary reality and that societies of agents are designed to work at different levels of abstractions (in what is called a subsumption architecture), yielding behavior that rises along a spectrum of agency from System 1 to System 2, using Kahneman's concept of <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">Thinking, Fast and Slow</a>.
 
 * Every system possesses a small set of inherent concepts.
 
@@ -27,7 +27,7 @@ This is Hofstadter's concept first expressed in <a href="https://www.amazon.com/
 
 * There must exist a clear separation of concerns between the logical and physical elements of the system.
 
-The primary consequences of this architectural principle are to enable run-time replaceability of agents and ontologies, to make possible the implementation of agents and ontologies in any number of programming languages, to yield relatively transparent placement on and migration of artifacts across the edge and the cloud, and to relegate the complexity of concurrency to be a systemic mechanism, not a local one to which ever artifact would have to attend.
+The primary consequences of this architectural principle are to enable run-time replaceability of agents and ontologies, to make possible the implementation of agents and ontologies in any number of programming languages, to yield relatively transparent placement on and migration of artifacts across the edge and the cloud, and to relegate the complexity of concurrency to be a systemic mechanism, not a local one to which every artifact would have to attend.
 
 * Assume deployment at scale across an underlying computational fabric that is unreliable and insecure.
 
@@ -301,7 +301,7 @@ Operand is a Concept representing a target of stateless/stateful activity.
 
 Instrument is a Concept representing a mechanism contributing to stateless/stateful activity.
 
-Resource is a Concept representing finite/invinite material used for stateless/stateful activity.
+Resource is a Concept representing finite/infinite material used for stateless/stateful activity.
 
 Input is a Concept representing a Signal entering a system boundary. Sensor is an alias for Input.
 
